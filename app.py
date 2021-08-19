@@ -12,7 +12,7 @@ setup_logging_system('logs/main.log')
 parser = argparse.ArgumentParser(description='Qt Template Application')
 
 parser.add_argument('--debug_mode', dest='debug_mode', action='store_true', default=False,
-                    help='Write debug images and data to disk (can make app slow)')
+                    help='Just a template argument to be modified')
 args = parser.parse_args()
 
 # global app parameters
