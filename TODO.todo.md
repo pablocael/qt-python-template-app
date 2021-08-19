@@ -1,0 +1,6 @@
+- [ ] 
+- [ ] Scale image displays
+- [ ] Redesign structure (tshirt area is not good)
+- [ ] Back image has lots of reflexes in acrylic
+- [ ] Set crop area to prevent features from label and other unwanted parts
+- [ ] 
