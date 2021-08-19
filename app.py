@@ -5,11 +5,7 @@ from decouple import config
 from core.logsystem import setup_logging_system
 from gui.MainWindow_ui import Ui_MainWindow
 
-from PySide2.QtCore import Qt, QCoreApplication, QEventLoop, QPointF
-from PySide2.QtCore import Slot, QTimer
-from PySide2.QtGui import QImage, QPixmap, QIcon, QPainter, QPen, QColor, QPainterPath
-from PySide2.QtMultimedia import QCameraInfo, QCamera, QCameraImageCapture, QImageEncoderSettings, QCameraExposure
-from PySide2.QtWidgets import QApplication, QMainWindow, QMessageBox, QListWidgetItem, QStackedWidget, QLabel
+from PySide2.QtWidgets import QApplication, QMainWindow
 
 setup_logging_system('logs/main.log')
 
@@ -38,7 +34,8 @@ class MainAppWindow(QMainWindow, Ui_MainWindow):
 
 
     def initialize_state(self):
-        pass
+        # read things from settings
+        self._debug_mode = config('DEBUG_MODE', False, cast=bool)
 
     #
     # UI Related methods
