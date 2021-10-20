@@ -1,3 +1,1 @@
-faiss
-opencv-python
-numpy
+pyside2
